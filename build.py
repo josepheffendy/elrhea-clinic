@@ -9,7 +9,7 @@ title: Page title
 description: Meta description
 nav: layanan | paket | tim | tentang | lokasi | (empty)
 wa_text: Prefilled WhatsApp message for this page
-og_image: clinic-sign.webp
+og_image: og-image.jpg  (optional, defaults to the logo share image)
 -->
 Inside a page: {{wa}} is this page's WhatsApp link, {{wa:Some message}} a link
 with a custom message, {{icon_wa}} the WhatsApp icon.
@@ -22,6 +22,8 @@ from urllib.parse import quote
 ROOT = Path(__file__).parent
 SRC = ROOT / "_src"
 WA_NUMBER = "6281977888850"
+# Absolute base for og:image / og:url (link previews need absolute URLs). Change when the real domain is live.
+SITE_URL = "https://elrhea-redesign.pages.dev"
 DEFAULT_WA_TEXT = "Halo Elrhea Clinic, saya ingin konsultasi dan booking jadwal terapi."
 NAV_KEYS = ["layanan", "paket", "tim", "tentang", "lokasi"]
 
@@ -55,7 +57,9 @@ def build():
         values = {
             "title": meta["title"],
             "description": meta["description"],
-            "og_image": meta.get("og_image") or "clinic-sign.webp",
+            "og_image": meta.get("og_image") or "og-image.jpg",
+            "site_url": SITE_URL,
+            "path": "" if page.name == "index.html" else page.name[:-5],
             "wa": wa,
             "icon_wa": ICON_WA,
             "version": version,

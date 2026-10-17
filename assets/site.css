@@ -3,8 +3,8 @@
 :root {
   --ink: oklch(0.24 0.06 262);          /* logo navy */
   --ink-soft: oklch(0.40 0.04 258);
-  --royal: oklch(0.48 0.15 255);        /* Instagram / signage blue */
-  --royal-deep: oklch(0.38 0.13 258);
+  --royal: #1a75bb;                     /* official logo blue (oklch 0.556 0.137 249) */
+  --royal-deep: oklch(0.45 0.13 250);
   --royal-tint: oklch(0.95 0.025 250);
   --mist: oklch(0.975 0.008 250);
   --paper: oklch(0.993 0.003 250);
@@ -200,8 +200,8 @@ h3 { font-size: var(--step-2); }
   align-items: center; padding-block: clamp(3rem, 7vw, 6.5rem);
 }
 .hero h1 { color: var(--on-royal); max-width: 16ch; font-size: clamp(2.6rem, 1.6rem + 3.4vw, 4.4rem); }
-.hero .eyebrow { color: var(--on-royal-soft); }
-.hero .lead { color: var(--on-royal-soft); margin-top: 1.5rem; }
+.hero .eyebrow { color: var(--on-royal); }
+.hero .lead { color: var(--on-royal); margin-top: 1.5rem; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 2.25rem; }
 .hero-media { position: relative; justify-self: end; width: min(100%, 30rem); }
 .arch {
@@ -406,12 +406,12 @@ h3 { font-size: var(--step-2); }
 .cta-band { background: var(--royal); color: var(--on-royal); }
 .cta-band .wrap { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 2rem; padding-block: clamp(3rem, 6vw, 4.5rem); }
 .cta-band h2 { color: var(--on-royal); max-width: 18ch; }
-.cta-band p { color: var(--on-royal-soft); margin: .8rem 0 0; max-width: 46ch; }
+.cta-band p { color: var(--on-royal); margin: .8rem 0 0; max-width: 46ch; }
 
 /* Footer */
 .site-footer { background: var(--ink); color: var(--on-royal-soft); padding-block: clamp(3.5rem, 6vw, 5rem) 2rem; font-size: var(--step--1); }
 .footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1.2fr; gap: 2.5rem; }
-.footer-grid img { height: 46px; width: auto; margin-bottom: 1.25rem; }
+.footer-grid img { height: 112px; width: auto; margin-bottom: 1.5rem; }
 .footer-grid h2 { font-family: var(--font-body); font-size: var(--step--1); font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--on-royal); margin-bottom: 1rem; }
 .footer-grid ul { list-style: none; padding: 0; margin: 0; display: grid; gap: .6rem; }
 .footer-grid a { text-decoration: none; color: var(--on-royal-soft); }

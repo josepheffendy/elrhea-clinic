@@ -6,14 +6,17 @@
   <meta name="format-detection" content="telephone=no">
   <title>{{title}}</title>
   <meta name="description" content="{{description}}">
-  <meta name="theme-color" content="#1d55b0">
+  <meta name="theme-color" content="#1a75bb">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Elrhea Clinic">
   <meta property="og:title" content="{{title}}">
   <meta property="og:description" content="{{description}}">
-  <meta property="og:image" content="assets/img/{{og_image}}">
+  <meta property="og:image" content="{{site_url}}/assets/img/{{og_image}}">
+  <meta property="og:url" content="{{site_url}}/{{path}}">
+  <meta name="twitter:card" content="summary_large_image">
   <meta property="og:locale" content="id_ID">
-  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/img/favicon.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="assets/img/icon-512.png">
   <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,6 +27,8 @@
     "@context": "https://schema.org",
     "@type": "MedicalClinic",
     "name": "Elrhea Clinic",
+    "logo": "{{site_url}}/assets/img/icon-512.png",
+    "image": "{{site_url}}/assets/img/og-image.jpg",
     "telephone": "+6281977888850",
     "email": "elrheaclinic.smg@gmail.com",
     "address": {
@@ -90,7 +95,7 @@
     <div class="wrap">
       <div class="footer-grid">
         <div>
-          <img src="assets/img/logo-white.webp" width="358" height="120" alt="Elrhea Clinic" loading="lazy">
+          <img src="assets/img/logo-stacked-white.webp" width="218" height="240" alt="Elrhea Clinic" loading="lazy">
           <p>Klinik terapi kebugaran di Semarang. Terapi ozone, vitamin booster, hyperbaric oxygen, dan laser estetika.</p>
         </div>
         <div>
