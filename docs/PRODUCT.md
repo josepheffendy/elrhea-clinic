@@ -25,6 +25,7 @@ Scene: a Semarang office worker, tired after a long week, taps the link in Elrhe
 
 ## Tone and constraints
 - Health-advertising rules (Permenkes 1787/2010): no superlatives, no guaranteed outcomes, no patient testimonials, always recommend consultation with medical staff first.
+- No staff exposure (owner's call, 17 Oct 2026): never show staff names, faces, titles or team photos. Build trust on clinic standards, licences and device registration instead. Photos must be faceless (gloved hands, equipment, rooms).
 - No invented facts: no stats, ratings, doctor names or prices until the clinic supplies them. Unknowns are visibly marked placeholders.
 
 ## Anti-references
