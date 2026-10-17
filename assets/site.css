@@ -3,7 +3,7 @@
 :root {
   --ink: oklch(0.24 0.06 262);          /* logo navy */
   --ink-soft: oklch(0.40 0.04 258);
-  --royal: #1a75bb;                     /* official logo blue (oklch 0.556 0.137 249) */
+  --royal: #0071bc;                     /* official logo blue, from the vector master (oklch 0.536 0.144 248) */
   --royal-deep: oklch(0.45 0.13 250);
   --royal-tint: oklch(0.95 0.025 250);
   --mist: oklch(0.975 0.008 250);
@@ -27,7 +27,7 @@
   --gutter: clamp(1rem, 0.5rem + 2.5vw, 2.5rem);
   --wrap: 75rem;
   --radius: 14px;
-  --header-h: 76px;
+  --header-h: 88px;
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
 }
 
@@ -103,7 +103,7 @@ h3 { font-size: var(--step-2); }
 .site-header.is-scrolled { border-bottom-color: var(--line); box-shadow: 0 6px 24px -18px oklch(0.24 0.06 262 / .5); }
 .header-row { display: flex; align-items: center; gap: 1.5rem; height: var(--header-h); }
 .brand { flex: none; display: block; }
-.brand img { height: 54px; width: auto; }
+.brand img { height: 68px; width: auto; }
 .nav { margin-left: auto; }
 .nav-list { display: flex; align-items: center; gap: .25rem; list-style: none; margin: 0; padding: 0; }
 .nav-link, .nav-trigger {
@@ -138,10 +138,10 @@ h3 { font-size: var(--step-2); }
   .header-cta .btn-label-long { display: none; }
 }
 @media (max-width: 940px) {
-  :root { --header-h: 64px; }
+  :root { --header-h: 72px; }
   /* backdrop-filter would make the header the containing block of the fixed menu panel */
   .site-header { backdrop-filter: none; background: var(--paper); }
-  .brand img { height: 42px; }
+  .brand img { height: 54px; }
   .header-cta { display: none; }
   .menu-toggle {
     display: inline-flex; margin-left: auto; align-items: center; gap: .5rem;
